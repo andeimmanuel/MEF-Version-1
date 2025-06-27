@@ -1,0 +1,2504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+<title>Volunteer With Us - The Mary Emmanuel Foundation</title>
+<meta name="description" content="Join our volunteer network and make a real impact. Support education, healthcare, advocacy, and empowerment efforts with The Mary Emmanuel Foundation.">
+<meta name="keywords" content="volunteer, nonprofit, community service, education, healthcare, advocacy">
+<meta property="og:title" content="Volunteer - The Mary Emmanuel Foundation">
+<meta property="og:description" content="Make a difference by volunteering with The Mary Emmanuel Foundation.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://maryemmanuelfoundation.org/volunteer">
+<meta property="og:image" content="https://maryemmanuelfoundation.org/assets/cover.jpg">
+<meta name="robots" content="index, follow">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volunteer With Us - The Mary Emmanuel Foundation</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#E67E22", secondary: "#3498DB" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <style>
+      :where([class^="ri-"])::before {
+        content: "\f3c2";
+      }
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Montserrat", sans-serif;
+      }
+      .hero-section {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.7) 0%,
+            rgba(0, 0, 0, 0.5) 50%,
+            rgba(0, 0, 0, 0.3) 100%
+          ),
+          url("https://readdy.ai/api/search-image?query=diverse%2520group%2520of%2520volunteers%2520working%2520together%2520in%2520a%2520community%2520garden%2520project%252C%2520planting%2520trees%2520and%2520vegetables%252C%2520smiling%2520and%2520collaborating%252C%2520natural%2520documentary%2520style%2520photography%252C%2520warm%2520golden%2520hour%2520lighting%252C%2520hopeful%2520atmosphere%252C%2520high%2520quality%2520professional%2520photography%252C%2520soft%2520natural%2520colors&width=1920&height=1080&seq=volunteer_hero&orientation=landscape");
+        background-size: cover;
+        background-position: center;
+      }
+      .form-input:focus {
+        outline: none;
+        border-color: #e67e22;
+      }
+      .custom-checkbox {
+        display: none;
+      }
+      .custom-checkbox + label {
+        position: relative;
+        padding-left: 35px;
+        cursor: pointer;
+        display: inline-block;
+      }
+      .custom-checkbox + label:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 24px;
+        height: 24px;
+        border: 2px solid #e67e22;
+        border-radius: 4px;
+        background: white;
+      }
+      .custom-checkbox:checked + label:after {
+        content: "";
+        position: absolute;
+        left: 8px;
+        top: 4px;
+        width: 8px;
+        height: 14px;
+        border: solid #e67e22;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+      }
+      .custom-radio {
+        display: none;
+      }
+      .custom-radio + label {
+        position: relative;
+        padding-left: 35px;
+        cursor: pointer;
+        display: inline-block;
+      }
+      .custom-radio + label:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 24px;
+        height: 24px;
+        border: 2px solid #e67e22;
+        border-radius: 50%;
+        background: white;
+      }
+      .custom-radio:checked + label:after {
+        content: "";
+        position: absolute;
+        left: 6px;
+        top: 6px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #e67e22;
+      }
+      .form-step {
+        display: none;
+      }
+      .form-step.active {
+        display: block;
+      }
+      .testimonial-card {
+        transition: transform 0.3s ease;
+      }
+      .testimonial-card:hover {
+        transform: translateY(-5px);
+      }
+      .opportunity-card {
+        transition: transform 0.3s ease;
+      }
+      .opportunity-card:hover {
+        transform: translateY(-5px);
+      }
+      .needs-card {
+        transition: transform 0.3s ease;
+      }
+      .needs-card:hover {
+        transform: translateY(-5px);
+      }
+      .custom-select {
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 0.75rem center;
+        background-size: 1rem;
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+      <div
+        class="container mx-auto px-6 py-3 flex justify-between items-center"
+      >
+        <a
+          href="https://readdy.ai/home/fc4edbf4-0af8-45c2-accb-4126ed777c42/4855e6e4-fa62-409e-a300-ca706fe3d2f6"
+          data-readdy="true"
+          class="font-['Pacifico'] text-2xl text-primary"
+          >The Mary Emmanuel Foundation</a
+        >
+        <div class="hidden md:flex space-x-8">
+          <a
+            href="https://readdy.ai/home/fc4edbf4-0af8-45c2-accb-4126ed777c42/4855e6e4-fa62-409e-a300-ca706fe3d2f6"
+            data-readdy="true"
+            class="text-gray-700 hover:text-primary font-medium transition duration-300"
+            ><a href="home.html" class="text-gray-700 hover:text-primary font-medium transition duration-300">Back to Main Page</a></a
+          >
+          <a
+            href="#opportunities"
+            class="text-gray-700 hover:text-primary font-medium transition duration-300"
+            >Opportunities</a
+          >
+          <a
+            href="#current-needs"
+            class="text-gray-700 hover:text-primary font-medium transition duration-300"
+            >Current Needs</a
+          >
+          <a
+            href="#testimonials"
+            class="text-gray-700 hover:text-primary font-medium transition duration-300"
+            >Testimonials</a
+          >
+          <a
+            href="#application"
+            class="text-gray-700 hover:text-primary font-medium transition duration-300"
+            >Apply Now</a
+          >
+        </div>
+        <a
+          href="https://readdy.ai/home/fc4edbf4-0af8-45c2-accb-4126ed777c42/34b43e2a-7bf2-4954-9c89-87ca94a68a75"
+          data-readdy="true"
+        >
+          <button
+            class="bg-primary text-white px-6 py-2 !rounded-button font-medium hover:bg-opacity-90 transition duration-300 whitespace-nowrap"
+          >
+            <a href="donate.html" class="text-gray-400 hover:text-white transition duration-300">Donate</a> Now
+          </button>
+        </a>
+        <div
+          class="md:hidden w-8 h-8 flex items-center justify-center text-gray-700 cursor-pointer"
+          id="mobile-menu-button"
+        >
+          <i class="ri-menu-line ri-lg"></i>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        class="md:hidden hidden bg-white absolute w-full shadow-lg"
+        id="mobile-menu"
+      >
+        <div class="container mx-auto px-6 py-3 flex flex-col space-y-4">
+          <a
+            href="https://readdy.ai/home/fc4edbf4-0af8-45c2-accb-4126ed777c42/4855e6e4-fa62-409e-a300-ca706fe3d2f6"
+            data-readdy="true"
+            class="text-gray-700 hover:text-primary font-medium transition duration-300"
+            ><a href="home.html" class="text-gray-700 hover:text-primary font-medium transition duration-300">Back to Main Page</a></a
+          >
+          <a
+            href="#opportunities"
+            class="text-gray-700 hover:text-primary font-medium transition duration-300"
+            >Opportunities</a
+          >
+          <a
+            href="#current-needs"
+            class="text-gray-700 hover:text-primary font-medium transition duration-300"
+            >Current Needs</a
+          >
+          <a
+            href="#testimonials"
+            class="text-gray-700 hover:text-primary font-medium transition duration-300"
+            >Testimonials</a
+          >
+          <a
+            href="#application"
+            class="text-gray-700 hover:text-primary font-medium transition duration-300"
+            >Apply Now</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="hero-section min-h-screen flex items-center justify-center text-white pt-16"
+    >
+      <div class="container mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          Volunteer With Us
+        </h1>
+        <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">
+          Join our global community of changemakers and help create lasting
+          impact in underserved communities.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="#application">
+            <button
+              class="bg-primary text-white px-8 py-3 !rounded-button font-medium text-lg hover:bg-opacity-90 transition duration-300 whitespace-nowrap"
+            >
+              Apply Now
+            </button>
+          </a>
+          <a href="#opportunities">
+            <button
+              class="bg-white text-primary px-8 py-3 !rounded-button font-medium text-lg hover:bg-opacity-90 transition duration-300 whitespace-nowrap"
+            >
+              Explore Opportunities
+            </button>
+          </a>
+        </div>
+      </div>
+      <div
+        class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce"
+      >
+        <a
+          href="#why-volunteer"
+          class="w-10 h-10 flex items-center justify-center text-white"
+        >
+          <i class="ri-arrow-down-line ri-2x"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Why Volunteer Section -->
+    <section id="why-volunteer" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+            Why Volunteer With Us?
+          </h2>
+          <p class="text-gray-700 max-w-3xl mx-auto">
+            Volunteering with The Mary Emmanuel Foundation offers a unique
+            opportunity to make a meaningful difference while developing
+            valuable skills and connections.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Reason 1 -->
+          <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+            <div
+              class="w-20 h-20 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <i class="ri-heart-line ri-2x text-primary"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">
+              Make a Real Impact
+            </h3>
+            <p class="text-gray-700">
+              Our volunteers work directly with communities, seeing firsthand
+              how their contributions create positive change in people's lives.
+            </p>
+          </div>
+
+          <!-- Reason 2 -->
+          <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+            <div
+              class="w-20 h-20 bg-secondary bg-opacity-10 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <i class="ri-team-line ri-2x text-secondary"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">
+              Join a Global Community
+            </h3>
+            <p class="text-gray-700">
+              Connect with like-minded individuals from around the world who
+              share your passion for creating a more equitable world.
+            </p>
+          </div>
+
+          <!-- Reason 3 -->
+          <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+            <div
+              class="w-20 h-20 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <i class="ri-user-star-line ri-2x text-primary"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">
+              Develop New Skills
+            </h3>
+            <p class="text-gray-700">
+              Gain valuable experience, enhance your resume, and develop both
+              professional and personal skills through meaningful service.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Volunteer Opportunities Section -->
+    <section id="opportunities" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+            Volunteer Opportunities
+          </h2>
+          <p class="text-gray-700 max-w-3xl mx-auto mb-8">
+            We offer a variety of ways to get involved, both in-person and
+            remotely, across our program areas.
+          </p>
+
+          <!-- Toggle Buttons -->
+          <div class="inline-flex bg-white rounded-full p-1 shadow-md mb-8">
+            <button
+              class="opportunity-filter px-6 py-2 rounded-full bg-primary text-white font-medium whitespace-nowrap"
+              data-filter="all"
+            >
+              All Opportunities
+            </button>
+            <button
+              class="opportunity-filter px-6 py-2 rounded-full text-gray-700 hover:bg-gray-100 font-medium whitespace-nowrap"
+              data-filter="remote"
+            >
+              Remote
+            </button>
+            <button
+              class="opportunity-filter px-6 py-2 rounded-full text-gray-700 hover:bg-gray-100 font-medium whitespace-nowrap"
+              data-filter="in-person"
+            >
+              In-Person
+            </button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Education Support -->
+          <div
+            class="opportunity-card bg-white rounded-lg shadow-lg overflow-hidden"
+            data-category="both"
+          >
+            <div
+              class="h-48 bg-primary bg-opacity-10 flex items-center justify-center"
+            >
+              <i class="ri-book-open-line ri-4x text-primary"></i>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-4">
+                <span
+                  class="bg-primary bg-opacity-10 text-primary text-xs font-medium px-3 py-1 rounded-full"
+                  >Education</span
+                >
+                <div class="flex space-x-2">
+                  <span
+                    class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full"
+                    >Remote</span
+                  >
+                  <span
+                    class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full"
+                    >In-Person</span
+                  >
+                </div>
+              </div>
+              <h3 class="text-xl font-bold mb-2 text-gray-800">
+                Education Support
+              </h3>
+              <p class="text-gray-700 mb-4">
+                Help with tutoring, curriculum development, teaching English,
+                computer skills training, and educational resource creation.
+              </p>
+              <div class="mb-4">
+                <p class="text-sm text-gray-600">
+                  <span class="font-medium">Time Commitment:</span> 3-10
+                  hours/week
+                </p>
+                <p class="text-sm text-gray-600">
+                  <span class="font-medium">Requirements:</span> Teaching
+                  experience preferred but not required
+                </p>
+              </div>
+              <button
+                class="w-full bg-white border-2 border-primary text-primary px-4 py-2 !rounded-button font-medium hover:bg-primary hover:text-white transition duration-300 whitespace-nowrap"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          <!-- Healthcare Assistance -->
+          <div
+            class="opportunity-card bg-white rounded-lg shadow-lg overflow-hidden"
+            data-category="in-person"
+          >
+            <div
+              class="h-48 bg-secondary bg-opacity-10 flex items-center justify-center"
+            >
+              <i class="ri-heart-pulse-line ri-4x text-secondary"></i>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-4">
+                <span
+                  class="bg-secondary bg-opacity-10 text-secondary text-xs font-medium px-3 py-1 rounded-full"
+                  >Healthcare</span
+                >
+                <div class="flex space-x-2">
+                  <span
+                    class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full"
+                    >In-Person</span
+                  >
+                </div>
+              </div>
+              <h3 class="text-xl font-bold mb-2 text-gray-800">
+                Healthcare Assistance
+              </h3>
+              <p class="text-gray-700 mb-4">
+                Support medical outreach programs, health education initiatives,
+                clinic operations, and community health worker training.
+              </p>
+              <div class="mb-4">
+                <p class="text-sm text-gray-600">
+                  <span class="font-medium">Time Commitment:</span> 5-20
+                  hours/week
+                </p>
+                <p class="text-sm text-gray-600">
+                  <span class="font-medium">Requirements:</span> Healthcare
+                  background for clinical roles
+                </p>
+              </div>
+              <button
+                class="w-full bg-white border-2 border-secondary text-secondary px-4 py-2 !rounded-button font-medium hover:bg-secondary hover:text-white transition duration-300 whitespace-nowrap"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          <!-- Community Outreach -->
+          <div
+            class="opportunity-card bg-white rounded-lg shadow-lg overflow-hidden"
+            data-category="both"
+          >
+            <div
+              class="h-48 bg-primary bg-opacity-10 flex items-center justify-center"
+            >
+              <i class="ri-megaphone-line ri-4x text-primary"></i>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-4">
+                <span
+                  class="bg-primary bg-opacity-10 text-primary text-xs font-medium px-3 py-1 rounded-full"
+                  >Advocacy</span
+                >
+                <div class="flex space-x-2">
+                  <span
+                    class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full"
+                    >Remote</span
+                  >
+                  <span
+                    class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full"
+                    >In-Person</span
+                  >
+                </div>
+              </div>
+              <h3 class="text-xl font-bold mb-2 text-gray-800">
+                Community Outreach
+              </h3>
+              <p class="text-gray-700 mb-4">
+                Assist with community organizing, awareness campaigns, advocacy
+                initiatives, and community needs assessments.
+              </p>
+              <div class="mb-4">
+                <p class="text-sm text-gray-600">
+                  <span class="font-medium">Time Commitment:</span> 2-8
+                  hours/week
+                </p>
+                <p class="text-sm text-gray-600">
+                  <span class="font-medium">Requirements:</span> Strong
+                  communication skills
+                </p>
+              </div>
+              <button
+                class="w-full bg-white border-2 border-primary text-primary px-4 py-2 !rounded-button font-medium hover:bg-primary hover:text-white transition duration-300 whitespace-nowrap"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          <!-- Administrative Support -->
+          <div
+            class="opportunity-card bg-white rounded-lg shadow-lg overflow-hidden"
+            data-category="remote"
+          >
+            <div
+              class="h-48 bg-secondary bg-opacity-10 flex items-center justify-center"
+            >
+              <i class="ri-computer-line ri-4x text-secondary"></i>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-4">
+                <span
+                  class="bg-secondary bg-opacity-10 text-secondary text-xs font-medium px-3 py-1 rounded-full"
+                  >Operations</span
+                >
+                <div class="flex space-x-2">
+                  <span
+                    class="bg-gray-100 text-gray-700 text-xs font-medium px-3 py-1 rounded-full"
+                    >Remote</span
+                  >
+                </div>
+              </div>
+              <h3 class="text-xl font-bold mb-2 text-gray-800">
+                Administrative Support
+              </h3>
+              <p class="text-gray-700 mb-4">
+                Help with grant writing, social media management, graphic
+                design, data analysis, translation, and general administrative
+                tasks.
+              </p>
+              <div class="mb-4">
+                <p class="text-sm text-gray-600">
+                  <span class="font-medium">Time Commitment:</span> 2-15
+                  hours/week
+                </p>
+                <p class="text-sm text-gray-600">
+                  <span class="font-medium">Requirements:</span> Relevant
+                  professional skills
+                </p>
+              </div>
+              <button
+                class="w-full bg-white border-2 border-secondary text-secondary px-4 py-2 !rounded-button font-medium hover:bg-secondary hover:text-white transition duration-300 whitespace-nowrap"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Current Volunteer Needs Section -->
+    <section id="current-needs" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+            Current Volunteer Needs
+          </h2>
+          <p class="text-gray-700 max-w-3xl mx-auto">
+            These are our most urgent volunteer positions that need to be filled
+            immediately.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Need 1 -->
+          <div
+            class="needs-card bg-white rounded-lg shadow-lg overflow-hidden border-t-4 border-primary"
+          >
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-bold text-gray-800">ESL Teacher</h3>
+                <span
+                  class="bg-red-100 text-red-600 text-xs font-medium px-3 py-1 rounded-full"
+                  >High Priority</span
+                >
+              </div>
+              <div class="mb-6">
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-primary mr-2"
+                  >
+                    <i class="ri-map-pin-line"></i>
+                  </div>
+                  <p class="text-gray-700">Remote (Online Teaching)</p>
+                </div>
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-primary mr-2"
+                  >
+                    <i class="ri-time-line"></i>
+                  </div>
+                  <p class="text-gray-700">
+                    5-10 hours/week, 3-month commitment
+                  </p>
+                </div>
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-primary mr-2"
+                  >
+                    <i class="ri-calendar-line"></i>
+                  </div>
+                  <p class="text-gray-700">Starting: July 15, 2025</p>
+                </div>
+              </div>
+              <div class="mb-6">
+                <h4 class="font-medium text-gray-800 mb-2">Required Skills:</h4>
+                <ul class="text-gray-700 space-y-1">
+                  <li class="flex items-start">
+                    <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                    <span>TEFL/TESOL certification or teaching experience</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                    <span>Fluent English speaker</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                    <span>Experience with online teaching platforms</span>
+                  </li>
+                </ul>
+              </div>
+              <a href="#application">
+                <button
+                  class="w-full bg-primary text-white px-4 py-2 !rounded-button font-medium hover:bg-opacity-90 transition duration-300 whitespace-nowrap"
+                >
+                  Apply Now
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <!-- Need 2 -->
+          <div
+            class="needs-card bg-white rounded-lg shadow-lg overflow-hidden border-t-4 border-secondary"
+          >
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Medical Outreach Assistant
+                </h3>
+                <span
+                  class="bg-orange-100 text-orange-600 text-xs font-medium px-3 py-1 rounded-full"
+                  >Medium Priority</span
+                >
+              </div>
+              <div class="mb-6">
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-secondary mr-2"
+                  >
+                    <i class="ri-map-pin-line"></i>
+                  </div>
+                  <p class="text-gray-700">Nairobi, Kenya (In-Person)</p>
+                </div>
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-secondary mr-2"
+                  >
+                    <i class="ri-time-line"></i>
+                  </div>
+                  <p class="text-gray-700">
+                    15-20 hours/week, 6-month commitment
+                  </p>
+                </div>
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-secondary mr-2"
+                  >
+                    <i class="ri-calendar-line"></i>
+                  </div>
+                  <p class="text-gray-700">Starting: August 1, 2025</p>
+                </div>
+              </div>
+              <div class="mb-6">
+                <h4 class="font-medium text-gray-800 mb-2">Required Skills:</h4>
+                <ul class="text-gray-700 space-y-1">
+                  <li class="flex items-start">
+                    <i class="ri-check-line text-secondary mr-2 mt-1"></i>
+                    <span>Medical background (nursing, public health)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="ri-check-line text-secondary mr-2 mt-1"></i>
+                    <span>Experience in community health programs</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="ri-check-line text-secondary mr-2 mt-1"></i>
+                    <span>Basic Swahili language skills preferred</span>
+                  </li>
+                </ul>
+              </div>
+              <a href="#application">
+                <button
+                  class="w-full bg-secondary text-white px-4 py-2 !rounded-button font-medium hover:bg-opacity-90 transition duration-300 whitespace-nowrap"
+                >
+                  Apply Now
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <!-- Need 3 -->
+          <div
+            class="needs-card bg-white rounded-lg shadow-lg overflow-hidden border-t-4 border-primary"
+          >
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-bold text-gray-800">Grant Writer</h3>
+                <span
+                  class="bg-red-100 text-red-600 text-xs font-medium px-3 py-1 rounded-full"
+                  >High Priority</span
+                >
+              </div>
+              <div class="mb-6">
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-primary mr-2"
+                  >
+                    <i class="ri-map-pin-line"></i>
+                  </div>
+                  <p class="text-gray-700">Remote</p>
+                </div>
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-primary mr-2"
+                  >
+                    <i class="ri-time-line"></i>
+                  </div>
+                  <p class="text-gray-700">
+                    10-15 hours/week, flexible schedule
+                  </p>
+                </div>
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-primary mr-2"
+                  >
+                    <i class="ri-calendar-line"></i>
+                  </div>
+                  <p class="text-gray-700">Starting: Immediately</p>
+                </div>
+              </div>
+              <div class="mb-6">
+                <h4 class="font-medium text-gray-800 mb-2">Required Skills:</h4>
+                <ul class="text-gray-700 space-y-1">
+                  <li class="flex items-start">
+                    <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                    <span>Previous grant writing experience</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                    <span>Strong research and writing skills</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="ri-check-line text-primary mr-2 mt-1"></i>
+                    <span>Knowledge of international development</span>
+                  </li>
+                </ul>
+              </div>
+              <a href="#application">
+                <button
+                  class="w-full bg-primary text-white px-4 py-2 !rounded-button font-medium hover:bg-opacity-90 transition duration-300 whitespace-nowrap"
+                >
+                  Apply Now
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Volunteer Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+            Volunteer Stories
+          </h2>
+          <p class="text-gray-700 max-w-3xl mx-auto">
+            Hear from those who have experienced the transformative power of
+            volunteering with us.
+          </p>
+        </div>
+
+        <div class="relative">
+          <div
+            class="flex overflow-x-auto pb-8 space-x-6 scrollbar-hide"
+            id="testimonial-carousel"
+          >
+            <!-- Testimonial 1 -->
+            <div
+              class="testimonial-card flex-shrink-0 w-full md:w-1/3 bg-white rounded-lg shadow-lg overflow-hidden"
+            >
+              <div class="p-8">
+                <div class="flex justify-center mb-6">
+                  <img
+                    src="https://readdy.ai/api/search-image?query=professional%2520headshot%2520of%2520young%2520Asian%2520woman%2520with%2520long%2520dark%2520hair%2520and%2520glasses%252C%2520warm%2520smile%252C%2520neutral%2520background%252C%2520high%2520quality%2520professional%2520photography&width=150&height=150&seq=volunteer1&orientation=squarish"
+                    alt="Volunteer"
+                    class="w-24 h-24 rounded-full object-cover object-top"
+                  />
+                </div>
+                <div class="flex items-center justify-center mb-6">
+                  <div class="flex">
+                    <i class="ri-star-fill text-yellow-500 mr-1"></i>
+                    <i class="ri-star-fill text-yellow-500 mr-1"></i>
+                    <i class="ri-star-fill text-yellow-500 mr-1"></i>
+                    <i class="ri-star-fill text-yellow-500 mr-1"></i>
+                    <i class="ri-star-fill text-yellow-500"></i>
+                  </div>
+                </div>
+                <p class="text-gray-700 mb-6 text-center italic">
+                  "Volunteering as an ESL teacher with The Mary Emmanuel
+                  Foundation has been the most rewarding experience of my life.
+                  Seeing my students grow in confidence and ability is
+                  incredibly fulfilling."
+                </p>
+                <div class="text-center">
+                  <h3 class="text-xl font-bold mb-1 text-gray-800">
+                    Mei Lin Chen
+                  </h3>
+                  <p class="text-primary font-medium mb-1">
+                    ESL Teacher Volunteer
+                  </p>
+                  <p class="text-gray-600 text-sm">Volunteering since 2023</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div
+              class="testimonial-card flex-shrink-0 w-full md:w-1/3 bg-white rounded-lg shadow-lg overflow-hidden"
+            >
+              <div class="p-8">
+                <div class="flex justify-center mb-6">
+                  <img
+                    src="https://readdy.ai/api/search-image?query=professional%2520headshot%2520of%2520middle-aged%2520Black%2520man%2520with%2520short%2520hair%2520and%2520beard%252C%2520friendly%2520smile%252C%2520neutral%2520background%252C%2520high%2520quality%2520professional%2520photography&width=150&height=150&seq=volunteer2&orientation=squarish"
+                    alt="Volunteer"
+                    class="w-24 h-24 rounded-full object-cover object-top"
+                  />
+                </div>
+                <div class="flex items-center justify-center mb-6">
+                  <div class="flex">
+                    <i class="ri-star-fill text-yellow-500 mr-1"></i>
+                    <i class="ri-star-fill text-yellow-500 mr-1"></i>
+                    <i class="ri-star-fill text-yellow-500 mr-1"></i>
+                    <i class="ri-star-fill text-yellow-500 mr-1"></i>
+                    <i class="ri-star-fill text-yellow-500"></i>
+                  </div>
+                </div>
+                <p class="text-gray-700 mb-6 text-center italic">
+                  "As a healthcare professional, I was able to use my skills to
+                  make a real difference in communities with limited access to
+                  medical care. The foundation provided excellent support
+                  throughout my volunteer experience."
+                </p>
+                <div class="text-center">
+                  <h3 class="text-xl font-bold mb-1 text-gray-800">
+                    Dr. Marcus Johnson
+                  </h3>
+                  <p class="text-primary font-medium mb-1">
+                    Medical Outreach Volunteer
+                  </p>
+                  <p class="text-gray-600 text-sm">Volunteering since 2022</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div
+              class="testimonial-card flex-shrink-0 w-full md:w-1/3 bg-white rounded-lg shadow-lg overflow-hidden"
+            >
+              <div class="p-8">
+                <div class="flex justify-center mb-6">
+                  <img
+                    src="https://readdy.ai/api/search-image?query=professional%2520headshot%2520of%2520young%2520Latino%2520woman%2520with%2520curly%2520hair%252C%2520warm%2520smile%252C%2520neutral%2520background%252C%2520high%2520quality%2520professional%2520photography&width=150&height=150&seq=volunteer3&orientation=squarish"
+                    alt="Volunteer"
+                    class="w-24 h-24 rounded-full object-cover object-top"
+                  />
+                </div>
+                <div class="flex items-center justify-center mb-6">
+                  <div class="flex">
+                    <i class="ri-star-fill text-yellow-500 mr-1"></i>
+                    <i class="ri-star-fill text-yellow-500 mr-1"></i>
+                    <i class="ri-star-fill text-yellow-500 mr-1"></i>
+                    <i class="ri-star-fill text-yellow-500 mr-1"></i>
+                    <i class="ri-star-fill text-yellow-500"></i>
+                  </div>
+                </div>
+                <p class="text-gray-700 mb-6 text-center italic">
+                  "I've been able to use my marketing skills to help promote the
+                  foundation's mission while working remotely. It's amazing to
+                  see how my professional expertise can contribute to meaningful
+                  social change."
+                </p>
+                <div class="text-center">
+                  <h3 class="text-xl font-bold mb-1 text-gray-800">
+                    Isabella Rodriguez
+                  </h3>
+                  <p class="text-primary font-medium mb-1">
+                    Remote Marketing Volunteer
+                  </p>
+                  <p class="text-gray-600 text-sm">Volunteering since 2024</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div
+              class="testimonial-card flex-shrink-0 w-full md:w-1/3 bg-white rounded-lg shadow-lg overflow-hidden"
+            >
+              <div class="p-8">
+                <div class="flex justify-center mb-6">
+                  <img
+                    src="https://readdy.ai/api/search-image?query=professional%2520headshot%2520of%2520middle-aged%2520Indian%2520man%2520with%2520glasses%252C%2520friendly%2520smile%252C%2520neutral%2520background%252C%2520high%2520quality%2520professional%2520photography&width=150&height=150&seq=volunteer4&orientation=squarish"
+                    alt="Volunteer"
+                    class="w-24 h-24 rounded-full object-cover object-top"
+                  />
+                </div>
+                <div class="flex items-center justify-center mb-6">
+                  <div class="flex">
+                    <i class="ri-star-fill text-yellow-500 mr-1"></i>
+                    <i class="ri-star-fill text-yellow-500 mr-1"></i>
+                    <i class="ri-star-fill text-yellow-500 mr-1"></i>
+                    <i class="ri-star-fill text-yellow-500 mr-1"></i>
+                    <i class="ri-star-fill text-yellow-500"></i>
+                  </div>
+                </div>
+                <p class="text-gray-700 mb-6 text-center italic">
+                  "Volunteering with the foundation's microfinance program has
+                  allowed me to share my financial expertise with entrepreneurs
+                  in developing communities. It's been incredibly rewarding to
+                  see businesses grow and thrive."
+                </p>
+                <div class="text-center">
+                  <h3 class="text-xl font-bold mb-1 text-gray-800">
+                    Rajiv Patel
+                  </h3>
+                  <p class="text-primary font-medium mb-1">
+                    Financial Advisor Volunteer
+                  </p>
+                  <p class="text-gray-600 text-sm">Volunteering since 2021</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Navigation -->
+          <div class="flex justify-center mt-6 space-x-2">
+            <button
+              class="testimonial-dot w-3 h-3 rounded-full bg-primary opacity-100"
+              data-index="0"
+            ></button>
+            <button
+              class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 opacity-50"
+              data-index="1"
+            ></button>
+            <button
+              class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 opacity-50"
+              data-index="2"
+            ></button>
+            <button
+              class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 opacity-50"
+              data-index="3"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Application Form Section -->
+    <section id="application" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+            Volunteer Application
+          </h2>
+          <p class="text-gray-700 max-w-3xl mx-auto">
+            Ready to make a difference? Complete the form below to start your
+            volunteer journey with us.
+          </p>
+        </div>
+
+        <div
+          class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden"
+        >
+          <!-- Form Progress Indicator -->
+          <div class="bg-gray-50 p-6">
+            <div class="flex justify-between">
+              <div
+                class="step-indicator flex flex-col items-center"
+                data-step="1"
+              >
+                <div
+                  class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold mb-2"
+                >
+                  1
+                </div>
+                <span class="text-sm font-medium text-gray-800"
+                  >Personal Info</span
+                >
+              </div>
+              <div class="flex-1 flex items-center mx-4">
+                <div class="h-1 w-full bg-gray-200 rounded">
+                  <div
+                    class="progress-bar h-1 w-0 bg-primary rounded transition-all duration-300"
+                  ></div>
+                </div>
+              </div>
+              <div
+                class="step-indicator flex flex-col items-center"
+                data-step="2"
+              >
+                <div
+                  class="w-10 h-10 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-bold mb-2"
+                >
+                  2
+                </div>
+                <span class="text-sm font-medium text-gray-500"
+                  >Skills & Experience</span
+                >
+              </div>
+              <div class="flex-1 flex items-center mx-4">
+                <div class="h-1 w-full bg-gray-200 rounded">
+                  <div
+                    class="progress-bar h-1 w-0 bg-primary rounded transition-all duration-300"
+                  ></div>
+                </div>
+              </div>
+              <div
+                class="step-indicator flex flex-col items-center"
+                data-step="3"
+              >
+                <div
+                  class="w-10 h-10 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-bold mb-2"
+                >
+                  3
+                </div>
+                <span class="text-sm font-medium text-gray-500"
+                  >Interests & Availability</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Application Form -->
+          <form id="volunteer-form" class="p-8">
+            <!-- Step 1: Personal Information -->
+            <div class="form-step active" data-step="1">
+              <h3 class="text-2xl font-bold mb-6 text-gray-800">
+                Personal Information
+              </h3>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                  <label
+                    for="first-name"
+                    class="block text-gray-700 font-medium mb-2"
+                    >First Name <span class="text-red-500">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    class="form-input w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                    placeholder="Your first name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="last-name"
+                    class="block text-gray-700 font-medium mb-2"
+                    >Last Name <span class="text-red-500">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    class="form-input w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                    placeholder="Your last name"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                  <label
+                    for="email"
+                    class="block text-gray-700 font-medium mb-2"
+                    >Email Address <span class="text-red-500">*</span></label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-input w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                    placeholder="Your email address"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="phone"
+                    class="block text-gray-700 font-medium mb-2"
+                    >Phone Number <span class="text-red-500">*</span></label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="form-input w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                    placeholder="Your phone number"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="mb-6">
+                <label
+                  for="address"
+                  class="block text-gray-700 font-medium mb-2"
+                  >Address <span class="text-red-500">*</span></label
+                >
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                  class="form-input w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                  placeholder="Street address"
+                  required
+                />
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                <div>
+                  <label for="city" class="block text-gray-700 font-medium mb-2"
+                    >City <span class="text-red-500">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    class="form-input w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                    placeholder="City"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="country"
+                    class="block text-gray-700 font-medium mb-2"
+                    >Country <span class="text-red-500">*</span></label
+                  >
+                  <select
+                    id="country"
+                    name="country"
+                    class="form-input custom-select w-full px-4 py-3 border border-gray-300 rounded focus:border-primary pr-8"
+                    required
+                  >
+                    <option value="" disabled selected>
+                      Select your country
+                    </option>
+                    <option value="US">United States</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="CA">Canada</option>
+                    <option value="AU">Australia</option>
+                    <option value="KE">Kenya</option>
+                    <option value="GH">Ghana</option>
+                    <option value="ZA">South Africa</option>
+                    <option value="IN">India</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div>
+                  <label
+                    for="postal-code"
+                    class="block text-gray-700 font-medium mb-2"
+                    >Postal Code <span class="text-red-500">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="postal-code"
+                    name="postal-code"
+                    class="form-input w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                    placeholder="Postal code"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="flex justify-end mt-8">
+                <button
+                  type="button"
+                  class="next-step bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 transition duration-300 whitespace-nowrap"
+                >
+                  Next: Skills & Experience
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2: Skills & Experience -->
+            <div class="form-step" data-step="2">
+              <h3 class="text-2xl font-bold mb-6 text-gray-800">
+                Skills & Experience
+              </h3>
+
+              <div class="mb-6">
+                <label
+                  for="education"
+                  class="block text-gray-700 font-medium mb-2"
+                  >Highest Level of Education
+                  <span class="text-red-500">*</span></label
+                >
+                <select
+                  id="education"
+                  name="education"
+                  class="form-input custom-select w-full px-4 py-3 border border-gray-300 rounded focus:border-primary pr-8"
+                  required
+                >
+                  <option value="" disabled selected>
+                    Select your education level
+                  </option>
+                  <option value="high-school">High School</option>
+                  <option value="associates">Associate's Degree</option>
+                  <option value="bachelors">Bachelor's Degree</option>
+                  <option value="masters">Master's Degree</option>
+                  <option value="doctorate">Doctorate</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="mb-6">
+                <label
+                  for="occupation"
+                  class="block text-gray-700 font-medium mb-2"
+                  >Current Occupation <span class="text-red-500">*</span></label
+                >
+                <input
+                  type="text"
+                  id="occupation"
+                  name="occupation"
+                  class="form-input w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                  placeholder="Your current job title"
+                  required
+                />
+              </div>
+
+              <div class="mb-6">
+                <label
+                  for="languages"
+                  class="block text-gray-700 font-medium mb-2"
+                  >Languages Spoken <span class="text-red-500">*</span></label
+                >
+                <input
+                  type="text"
+                  id="languages"
+                  name="languages"
+                  class="form-input w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                  placeholder="e.g., English (fluent), Spanish (intermediate), French (basic)"
+                  required
+                />
+              </div>
+
+              <div class="mb-6">
+                <label class="block text-gray-700 font-medium mb-2"
+                  >Skills (Select all that apply)
+                  <span class="text-red-500">*</span></label
+                >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="skill-teaching"
+                      name="skills[]"
+                      value="teaching"
+                      class="custom-checkbox"
+                    />
+                    <label for="skill-teaching" class="text-gray-700"
+                      >Teaching/Tutoring</label
+                    >
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="skill-healthcare"
+                      name="skills[]"
+                      value="healthcare"
+                      class="custom-checkbox"
+                    />
+                    <label for="skill-healthcare" class="text-gray-700"
+                      >Healthcare</label
+                    >
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="skill-marketing"
+                      name="skills[]"
+                      value="marketing"
+                      class="custom-checkbox"
+                    />
+                    <label for="skill-marketing" class="text-gray-700"
+                      >Marketing/Communications</label
+                    >
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="skill-it"
+                      name="skills[]"
+                      value="it"
+                      class="custom-checkbox"
+                    />
+                    <label for="skill-it" class="text-gray-700"
+                      >IT/Technology</label
+                    >
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="skill-writing"
+                      name="skills[]"
+                      value="writing"
+                      class="custom-checkbox"
+                    />
+                    <label for="skill-writing" class="text-gray-700"
+                      >Writing/Editing</label
+                    >
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="skill-admin"
+                      name="skills[]"
+                      value="admin"
+                      class="custom-checkbox"
+                    />
+                    <label for="skill-admin" class="text-gray-700"
+                      >Administrative</label
+                    >
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="skill-finance"
+                      name="skills[]"
+                      value="finance"
+                      class="custom-checkbox"
+                    />
+                    <label for="skill-finance" class="text-gray-700"
+                      >Finance/Accounting</label
+                    >
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="skill-other"
+                      name="skills[]"
+                      value="other"
+                      class="custom-checkbox"
+                    />
+                    <label for="skill-other" class="text-gray-700">Other</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-6">
+                <label
+                  for="experience"
+                  class="block text-gray-700 font-medium mb-2"
+                  >Previous Volunteer Experience</label
+                >
+                <textarea
+                  id="experience"
+                  name="experience"
+                  rows="4"
+                  class="form-input w-full px-4 py-3 border border-gray-300 rounded focus:border-primary resize-none"
+                  placeholder="Please describe any previous volunteer experience you have"
+                ></textarea>
+              </div>
+
+              <div class="mb-6">
+                <label for="resume" class="block text-gray-700 font-medium mb-2"
+                  >Upload Resume/CV (Optional)</label
+                >
+                <input type="file" id="resume" name="resume" class="hidden" />
+                <div
+                  class="border border-dashed border-gray-300 rounded p-6 text-center cursor-pointer hover:bg-gray-50 transition"
+                  id="resume-upload-area"
+                >
+                  <div
+                    class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4"
+                  >
+                    <i class="ri-upload-2-line ri-lg text-gray-600"></i>
+                  </div>
+                  <p class="text-gray-700 mb-1">
+                    Drag and drop your file here or click to browse
+                  </p>
+                  <p class="text-gray-500 text-sm">
+                    PDF, DOC, or DOCX (Max 5MB)
+                  </p>
+                </div>
+                <div
+                  id="file-name"
+                  class="mt-2 text-sm text-gray-600 hidden"
+                ></div>
+              </div>
+
+              <div class="flex justify-between mt-8">
+                <button
+                  type="button"
+                  class="prev-step bg-white border-2 border-primary text-primary px-6 py-3 !rounded-button font-medium hover:bg-primary hover:text-white transition duration-300 whitespace-nowrap"
+                >
+                  Previous: Personal Info
+                </button>
+                <button
+                  type="button"
+                  class="next-step bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 transition duration-300 whitespace-nowrap"
+                >
+                  Next: Interests & Availability
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 3: Interests & Availability -->
+            <div class="form-step" data-step="3">
+              <h3 class="text-2xl font-bold mb-6 text-gray-800">
+                Interests & Availability
+              </h3>
+
+              <div class="mb-6">
+                <label class="block text-gray-700 font-medium mb-2"
+                  >Preferred Volunteer Type
+                  <span class="text-red-500">*</span></label
+                >
+                <div class="space-y-3">
+                  <div>
+                    <input
+                      type="radio"
+                      id="type-remote"
+                      name="volunteer-type"
+                      value="remote"
+                      class="custom-radio"
+                      required
+                    />
+                    <label for="type-remote" class="text-gray-700"
+                      >Remote (Virtual)</label
+                    >
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="type-in-person"
+                      name="volunteer-type"
+                      value="in-person"
+                      class="custom-radio"
+                    />
+                    <label for="type-in-person" class="text-gray-700"
+                      >In-Person</label
+                    >
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="type-both"
+                      name="volunteer-type"
+                      value="both"
+                      class="custom-radio"
+                    />
+                    <label for="type-both" class="text-gray-700"
+                      >Both Remote and In-Person</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-6">
+                <label class="block text-gray-700 font-medium mb-2"
+                  >Areas of Interest (Select all that apply)
+                  <span class="text-red-500">*</span></label
+                >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="interest-education"
+                      name="interests[]"
+                      value="education"
+                      class="custom-checkbox"
+                    />
+                    <label for="interest-education" class="text-gray-700"
+                      >Education Support</label
+                    >
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="interest-healthcare"
+                      name="interests[]"
+                      value="healthcare"
+                      class="custom-checkbox"
+                    />
+                    <label for="interest-healthcare" class="text-gray-700"
+                      >Healthcare Assistance</label
+                    >
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="interest-outreach"
+                      name="interests[]"
+                      value="outreach"
+                      class="custom-checkbox"
+                    />
+                    <label for="interest-outreach" class="text-gray-700"
+                      >Community Outreach</label
+                    >
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="interest-admin"
+                      name="interests[]"
+                      value="admin"
+                      class="custom-checkbox"
+                    />
+                    <label for="interest-admin" class="text-gray-700"
+                      >Administrative Support</label
+                    >
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="interest-fundraising"
+                      name="interests[]"
+                      value="fundraising"
+                      class="custom-checkbox"
+                    />
+                    <label for="interest-fundraising" class="text-gray-700"
+                      >Fundraising</label
+                    >
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="interest-advocacy"
+                      name="interests[]"
+                      value="advocacy"
+                      class="custom-checkbox"
+                    />
+                    <label for="interest-advocacy" class="text-gray-700"
+                      >Advocacy</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-6">
+                <label
+                  for="time-commitment"
+                  class="block text-gray-700 font-medium mb-2"
+                  >Time Commitment <span class="text-red-500">*</span></label
+                >
+                <select
+                  id="time-commitment"
+                  name="time-commitment"
+                  class="form-input custom-select w-full px-4 py-3 border border-gray-300 rounded focus:border-primary pr-8"
+                  required
+                >
+                  <option value="" disabled selected>
+                    Select your availability
+                  </option>
+                  <option value="1-5">1-5 hours per week</option>
+                  <option value="5-10">5-10 hours per week</option>
+                  <option value="10-20">10-20 hours per week</option>
+                  <option value="20+">20+ hours per week</option>
+                </select>
+              </div>
+
+              <div class="mb-6">
+                <label
+                  for="duration"
+                  class="block text-gray-700 font-medium mb-2"
+                  >Duration of Commitment
+                  <span class="text-red-500">*</span></label
+                >
+                <select
+                  id="duration"
+                  name="duration"
+                  class="form-input custom-select w-full px-4 py-3 border border-gray-300 rounded focus:border-primary pr-8"
+                  required
+                >
+                  <option value="" disabled selected>
+                    Select commitment period
+                  </option>
+                  <option value="3-months">3 months</option>
+                  <option value="6-months">6 months</option>
+                  <option value="1-year">1 year</option>
+                  <option value="ongoing">Ongoing/No specific end date</option>
+                </select>
+              </div>
+
+              <div class="mb-6">
+                <label
+                  for="start-date"
+                  class="block text-gray-700 font-medium mb-2"
+                  >Earliest Start Date
+                  <span class="text-red-500">*</span></label
+                >
+                <input
+                  type="date"
+                  id="start-date"
+                  name="start-date"
+                  class="form-input w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                  required
+                />
+              </div>
+
+              <div class="mb-6">
+                <label
+                  for="additional-info"
+                  class="block text-gray-700 font-medium mb-2"
+                  >Additional Information</label
+                >
+                <textarea
+                  id="additional-info"
+                  name="additional-info"
+                  rows="4"
+                  class="form-input w-full px-4 py-3 border border-gray-300 rounded focus:border-primary resize-none"
+                  placeholder="Please share any additional information that might be relevant to your application"
+                ></textarea>
+              </div>
+
+              <div class="mb-6">
+                <input
+                  type="checkbox"
+                  id="terms"
+                  name="terms"
+                  class="custom-checkbox"
+                  required
+                />
+                <label for="terms" class="text-gray-700"
+                  >I agree to the
+                  <a href="index.html#opportunities" class="text-primary hover:underline"
+                    >Terms and Conditions</a
+                  >
+                  and
+                  <a href="index.html#opportunities" class="text-primary hover:underline"
+                    >Privacy Policy</a
+                  >
+                  <span class="text-red-500">*</span></label
+                >
+              </div>
+
+              <div class="flex justify-between mt-8">
+                <button
+                  type="button"
+                  class="prev-step bg-white border-2 border-primary text-primary px-6 py-3 !rounded-button font-medium hover:bg-primary hover:text-white transition duration-300 whitespace-nowrap"
+                >
+                  Previous: Skills & Experience
+                </button>
+                <button
+                  type="submit"
+                  class="bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 transition duration-300 whitespace-nowrap"
+                >
+                  Submit Application
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Success Message (Hidden by default) -->
+          <div id="success-message" class="p-8 text-center hidden">
+            <div
+              class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="ri-check-line ri-2x text-green-600"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">
+              Application Submitted Successfully!
+            </h3>
+            <p class="text-gray-700 mb-6">
+              Thank you for your interest in volunteering with The Mary Emmanuel
+              Foundation. We've received your application and will be in touch
+              within 5-7 business days.
+            </p>
+            <a
+              href="https://readdy.ai/home/fc4edbf4-0af8-45c2-accb-4126ed777c42/4855e6e4-fa62-409e-a300-ca706fe3d2f6"
+              data-readdy="true"
+            >
+              <button
+                class="bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 transition duration-300 whitespace-nowrap"
+              >
+                Return to Main Page
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-gray-700 max-w-3xl mx-auto">
+            Find answers to common questions about volunteering with The Mary
+            Emmanuel Foundation.
+          </p>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+          <div class="space-y-6">
+            <!-- FAQ Item 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <button
+                class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="text-lg font-medium text-gray-800"
+                  >What are the requirements to volunteer?</span
+                >
+                <i
+                  class="ri-arrow-down-s-line ri-lg text-primary faq-icon transition-transform duration-300"
+                ></i>
+              </button>
+              <div class="faq-content px-6 pb-4 hidden">
+                <p class="text-gray-700">
+                  Requirements vary by role, but generally we look for
+                  individuals who are at least 18 years old, have relevant
+                  skills or a willingness to learn, and can commit to a minimum
+                  time period (typically 3 months). Some specialized roles may
+                  require specific qualifications or experience. All volunteers
+                  must complete our application process and orientation program.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <button
+                class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="text-lg font-medium text-gray-800"
+                  >Can I volunteer remotely from another country?</span
+                >
+                <i
+                  class="ri-arrow-down-s-line ri-lg text-primary faq-icon transition-transform duration-300"
+                ></i>
+              </button>
+              <div class="faq-content px-6 pb-4 hidden">
+                <p class="text-gray-700">
+                  Yes! We have many remote volunteer opportunities that can be
+                  done from anywhere in the world. These include roles in grant
+                  writing, social media management, translation, curriculum
+                  development, graphic design, and more. Remote volunteers are a
+                  vital part of our global team and contribute significantly to
+                  our mission.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <button
+                class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="text-lg font-medium text-gray-800"
+                  >How long does the application process take?</span
+                >
+                <i
+                  class="ri-arrow-down-s-line ri-lg text-primary faq-icon transition-transform duration-300"
+                ></i>
+              </button>
+              <div class="faq-content px-6 pb-4 hidden">
+                <p class="text-gray-700">
+                  Our application review process typically takes 5-7 business
+                  days. If your application is selected, you'll be invited for
+                  an interview (in-person or virtual). The entire process from
+                  application to placement usually takes 2-3 weeks, though this
+                  may vary depending on the role and current demand.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <button
+                class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="text-lg font-medium text-gray-800"
+                  >Do you provide housing for in-person volunteers?</span
+                >
+                <i
+                  class="ri-arrow-down-s-line ri-lg text-primary faq-icon transition-transform duration-300"
+                ></i>
+              </button>
+              <div class="faq-content px-6 pb-4 hidden">
+                <p class="text-gray-700">
+                  For long-term international volunteers (3+ months), we can
+                  assist with finding affordable housing options and may provide
+                  housing stipends for certain roles. Short-term volunteers are
+                  generally responsible for their own accommodations, though we
+                  can provide recommendations. All housing arrangements are
+                  discussed during the interview process.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <button
+                class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="text-lg font-medium text-gray-800"
+                  >Will I receive training before starting?</span
+                >
+                <i
+                  class="ri-arrow-down-s-line ri-lg text-primary faq-icon transition-transform duration-300"
+                ></i>
+              </button>
+              <div class="faq-content px-6 pb-4 hidden">
+                <p class="text-gray-700">
+                  Yes, all volunteers receive a comprehensive orientation to our
+                  organization and specific training for their role. The
+                  training format varies by position but may include online
+                  modules, in-person workshops, shadowing experienced
+                  volunteers, and ongoing mentorship. We're committed to
+                  ensuring all volunteers feel prepared and supported in their
+                  roles.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold mb-4 text-gray-800">
+            Have More Questions?
+          </h2>
+          <p class="text-gray-700 max-w-3xl mx-auto">
+            Our volunteer coordination team is here to help. Reach out to us
+            directly.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row justify-center items-center gap-8"
+        >
+          <div class="flex items-center">
+            <div
+              class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4"
+            >
+              <i class="ri-mail-line ri-lg text-primary"></i>
+            </div>
+            <div>
+              <p class="text-gray-600 text-sm">Email Us</p>
+              <p class="text-gray-800 font-medium">
+                volunteers@maryemmanuel.org
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-center">
+            <div
+              class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4"
+            >
+              <i class="ri-phone-line ri-lg text-primary"></i>
+            </div>
+            <div>
+              <p class="text-gray-600 text-sm">Call Us</p>
+              <p class="text-gray-800 font-medium">+254 123 456 789</p>
+            </div>
+          </div>
+
+          <div class="flex items-center">
+            <div
+              class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4"
+            >
+              <i class="ri-calendar-line ri-lg text-primary"></i>
+            </div>
+            <div>
+              <p class="text-gray-600 text-sm">Virtual Info Sessions</p>
+              <p class="text-gray-800 font-medium">Every Tuesday at 2PM EAT</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+      <div class="container mx-auto px-6">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12"
+        >
+          <div>
+            <h3 class="font-['Pacifico'] text-2xl mb-6">
+              The Mary Emmanuel Foundation
+            </h3>
+            <p class="text-gray-400 mb-6">
+              Empowering communities through education, healthcare, advocacy,
+              and economic empowerment since 2010.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="index.html#opportunities"
+                class="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:border-white transition duration-300"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="index.html#opportunities"
+                class="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:border-white transition duration-300"
+              >
+                <i class="ri-twitter-x-fill"></i>
+              </a>
+              <a
+                href="index.html#opportunities"
+                class="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:border-white transition duration-300"
+              >
+                <i class="ri-instagram-fill"></i>
+              </a>
+              <a
+                href="index.html#opportunities"
+                class="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:border-white transition duration-300"
+              >
+                <i class="ri-linkedin-fill"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-6">Quick Links</h3>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  href="https://readdy.ai/home/fc4edbf4-0af8-45c2-accb-4126ed777c42/4855e6e4-fa62-409e-a300-ca706fe3d2f6"
+                  data-readdy="true"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#opportunities"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >Our Programs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#opportunities"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >Impact Stories</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#opportunities"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >News & Events</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#opportunities"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  ><a href="donate.html" class="text-gray-400 hover:text-white transition duration-300">Donate</a></a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#opportunities"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-6">Volunteer</h3>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  href="#opportunities"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >Opportunities</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#current-needs"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >Current Needs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#testimonials"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >Volunteer Stories</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#application"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >Apply Now</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#opportunities"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >Resources</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#opportunities"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >FAQ</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-6">Contact Info</h3>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center text-primary mr-3"
+                >
+                  <i class="ri-map-pin-line"></i>
+                </div>
+                <span class="text-gray-400"
+                  >123 Humanitarian Way<br />Nairobi, Kenya 00100</span
+                >
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center text-primary mr-3"
+                >
+                  <i class="ri-phone-line"></i>
+                </div>
+                <span class="text-gray-400">+254 123 456 789</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center text-primary mr-3"
+                >
+                  <i class="ri-mail-line"></i>
+                </div>
+                <span class="text-gray-400">info@maryemmanuel.org</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-400 text-sm mb-4 md:mb-0">
+            &copy; 2025 The Mary Emmanuel Foundation. All rights reserved.
+          </p>
+          <div class="flex space-x-6">
+            <a
+              href="index.html#opportunities"
+              class="text-gray-400 hover:text-white text-sm transition duration-300"
+              >Privacy Policy</a
+            >
+            <a
+              href="index.html#opportunities"
+              class="text-gray-400 hover:text-white text-sm transition duration-300"
+              >Terms of Service</a
+            >
+            <a
+              href="index.html#opportunities"
+              class="text-gray-400 hover:text-white text-sm transition duration-300"
+              >Cookie Policy</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script id="mobileMenuScript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        mobileMenuButton.addEventListener("click", function () {
+          mobileMenu.classList.toggle("hidden");
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileLinks = mobileMenu.querySelectorAll("a");
+        mobileLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            mobileMenu.classList.add("hidden");
+          });
+        });
+      });
+    </script>
+
+    <script id="testimonialCarouselScript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const carousel = document.getElementById("testimonial-carousel");
+        const indicators = document.querySelectorAll(".testimonial-dot");
+        const cardWidth =
+          carousel.querySelector(".testimonial-card").offsetWidth + 24; // Width + gap
+
+        indicators.forEach((indicator) => {
+          indicator.addEventListener("click", function () {
+            const index = parseInt(this.getAttribute("data-index"));
+            carousel.scrollTo({
+              left: index * cardWidth,
+              behavior: "smooth",
+            });
+
+            // Update active indicator
+            indicators.forEach((ind) => {
+              ind.classList.remove("bg-primary");
+              ind.classList.add("bg-gray-300");
+              ind.classList.remove("opacity-100");
+              ind.classList.add("opacity-50");
+            });
+            this.classList.add("bg-primary");
+            this.classList.remove("bg-gray-300");
+            this.classList.add("opacity-100");
+            this.classList.remove("opacity-50");
+          });
+        });
+
+        // Handle scroll events to update indicators
+        carousel.addEventListener("scroll", function () {
+          const scrollPosition = carousel.scrollLeft;
+          const activeIndex = Math.round(scrollPosition / cardWidth);
+
+          indicators.forEach((ind, index) => {
+            if (index === activeIndex) {
+              ind.classList.add("bg-primary");
+              ind.classList.remove("bg-gray-300");
+              ind.classList.add("opacity-100");
+              ind.classList.remove("opacity-50");
+            } else {
+              ind.classList.remove("bg-primary");
+              ind.classList.add("bg-gray-300");
+              ind.classList.remove("opacity-100");
+              ind.classList.add("opacity-50");
+            }
+          });
+        });
+      });
+    </script>
+
+    <script id="opportunityFilterScript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll(".opportunity-filter");
+        const opportunityCards = document.querySelectorAll(".opportunity-card");
+
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const filter = this.getAttribute("data-filter");
+
+            // Update active button
+            filterButtons.forEach((btn) => {
+              btn.classList.remove("bg-primary", "text-white");
+              btn.classList.add("text-gray-700", "hover:bg-gray-100");
+            });
+            this.classList.add("bg-primary", "text-white");
+            this.classList.remove("text-gray-700", "hover:bg-gray-100");
+
+            // Filter cards
+            opportunityCards.forEach((card) => {
+              const category = card.getAttribute("data-category");
+
+              if (
+                filter === "all" ||
+                filter === category ||
+                category === "both"
+              ) {
+                card.style.display = "block";
+              } else {
+                card.style.display = "none";
+              }
+            });
+          });
+        });
+      });
+    </script>
+
+    <script id="formStepsScript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const formSteps = document.querySelectorAll(".form-step");
+        const nextButtons = document.querySelectorAll(".next-step");
+        const prevButtons = document.querySelectorAll(".prev-step");
+        const progressBars = document.querySelectorAll(".progress-bar");
+        const stepIndicators = document.querySelectorAll(".step-indicator");
+
+        // Next button click
+        nextButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const currentStep = parseInt(
+              this.closest(".form-step").getAttribute("data-step")
+            );
+            const nextStep = currentStep + 1;
+
+            // Hide current step
+            document
+              .querySelector(`.form-step[data-step="${currentStep}"]`)
+              .classList.remove("active");
+
+            // Show next step
+            document
+              .querySelector(`.form-step[data-step="${nextStep}"]`)
+              .classList.add("active");
+
+            // Update progress bar
+            updateProgress(nextStep);
+          });
+        });
+
+        // Previous button click
+        prevButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const currentStep = parseInt(
+              this.closest(".form-step").getAttribute("data-step")
+            );
+            const prevStep = currentStep - 1;
+
+            // Hide current step
+            document
+              .querySelector(`.form-step[data-step="${currentStep}"]`)
+              .classList.remove("active");
+
+            // Show previous step
+            document
+              .querySelector(`.form-step[data-step="${prevStep}"]`)
+              .classList.add("active");
+
+            // Update progress bar
+            updateProgress(prevStep);
+          });
+        });
+
+        // Update progress indicators
+        function updateProgress(currentStep) {
+          // Update progress bars
+          progressBars.forEach((bar, index) => {
+            if (index < currentStep - 1) {
+              bar.style.width = "100%";
+            } else {
+              bar.style.width = "0";
+            }
+          });
+
+          // Update step indicators
+          stepIndicators.forEach((indicator, index) => {
+            const step = index + 1;
+
+            if (step < currentStep) {
+              // Completed step
+              indicator
+                .querySelector("div")
+                .classList.remove("bg-gray-200", "text-gray-600");
+              indicator
+                .querySelector("div")
+                .classList.add("bg-primary", "text-white");
+              indicator.querySelector("span").classList.remove("text-gray-500");
+              indicator.querySelector("span").classList.add("text-gray-800");
+            } else if (step === currentStep) {
+              // Current step
+              indicator
+                .querySelector("div")
+                .classList.remove("bg-gray-200", "text-gray-600");
+              indicator
+                .querySelector("div")
+                .classList.add("bg-primary", "text-white");
+              indicator.querySelector("span").classList.remove("text-gray-500");
+              indicator.querySelector("span").classList.add("text-gray-800");
+            } else {
+              // Upcoming step
+              indicator
+                .querySelector("div")
+                .classList.remove("bg-primary", "text-white");
+              indicator
+                .querySelector("div")
+                .classList.add("bg-gray-200", "text-gray-600");
+              indicator.querySelector("span").classList.remove("text-gray-800");
+              indicator.querySelector("span").classList.add("text-gray-500");
+            }
+          });
+        }
+
+        // Form submission
+        const volunteerForm = document.getElementById("volunteer-form");
+        volunteerForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Here you would normally send the form data to your server
+
+          // Hide form and show success message
+          volunteerForm.style.display = "none";
+          document.getElementById("success-message").classList.remove("hidden");
+
+          // Reset progress indicators for visual cleanliness
+          progressBars.forEach((bar) => {
+            bar.style.width = "0";
+          });
+
+          stepIndicators.forEach((indicator, index) => {
+            if (index > 0) {
+              indicator
+                .querySelector("div")
+                .classList.remove("bg-primary", "text-white");
+              indicator
+                .querySelector("div")
+                .classList.add("bg-gray-200", "text-gray-600");
+              indicator.querySelector("span").classList.remove("text-gray-800");
+              indicator.querySelector("span").classList.add("text-gray-500");
+            }
+          });
+        });
+      });
+    </script>
+
+    <script id="resumeUploadScript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const resumeInput = document.getElementById("resume");
+        const uploadArea = document.getElementById("resume-upload-area");
+        const fileNameDisplay = document.getElementById("file-name");
+
+        uploadArea.addEventListener("click", function () {
+          resumeInput.click();
+        });
+
+        uploadArea.addEventListener("dragover", function (e) {
+          e.preventDefault();
+          uploadArea.classList.add("border-primary");
+        });
+
+        uploadArea.addEventListener("dragleave", function () {
+          uploadArea.classList.remove("border-primary");
+        });
+
+        uploadArea.addEventListener("drop", function (e) {
+          e.preventDefault();
+          uploadArea.classList.remove("border-primary");
+
+          if (e.dataTransfer.files.length) {
+            resumeInput.files = e.dataTransfer.files;
+            updateFileName(e.dataTransfer.files[0].name);
+          }
+        });
+
+        resumeInput.addEventListener("change", function () {
+          if (this.files.length) {
+            updateFileName(this.files[0].name);
+          }
+        });
+
+        function updateFileName(name) {
+          fileNameDisplay.textContent = `Selected file: ${name}`;
+          fileNameDisplay.classList.remove("hidden");
+        }
+      });
+    </script>
+
+    <script id="faqScript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const faqToggles = document.querySelectorAll(".faq-toggle");
+
+        faqToggles.forEach((toggle) => {
+          toggle.addEventListener("click", function () {
+            const content = this.nextElementSibling;
+            const icon = this.querySelector(".faq-icon");
+
+            // Toggle content
+            content.classList.toggle("hidden");
+
+            // Rotate icon
+            if (content.classList.contains("hidden")) {
+              icon.style.transform = "rotate(0deg)";
+            } else {
+              icon.style.transform = "rotate(180deg)";
+            }
+
+            // Close other FAQs
+            faqToggles.forEach((otherToggle) => {
+              if (otherToggle !== toggle) {
+                const otherContent = otherToggle.nextElementSibling;
+                const otherIcon = otherToggle.querySelector(".faq-icon");
+
+                otherContent.classList.add("hidden");
+                otherIcon.style.transform = "rotate(0deg)";
+              }
+            });
+          });
+        });
+      });
+    </script>
+
+    <script id="smoothScrollScript">
+      document.addEventListener("DOMContentLoaded", function () {
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+              const navHeight = document.querySelector("nav").offsetHeight;
+              const targetPosition =
+                targetElement.getBoundingClientRect().top +
+                window.pageYOffset -
+                navHeight;
+
+              window.scrollTo({
+                top: targetPosition,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
